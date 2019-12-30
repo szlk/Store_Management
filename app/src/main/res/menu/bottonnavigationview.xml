@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_one"
+        android:icon="@drawable/icon_one"
+        android:title="出库"/>
+
+    <item
+        android:id="@+id/tab_two"
+        android:icon="@drawable/icon_two"
+        android:title="进库"/>
+
+
+    <item
+        android:id="@+id/tab_three"
+        android:icon="@drawable/icon_three"
+        android:title="详情"/>
+</menu>
