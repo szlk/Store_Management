@@ -102,10 +102,7 @@ public class Statistical extends AppCompatActivity {
                             parseInt4 = Integer.parseInt(cartogram.getRECORDS().get(i).getShopMemory());
                             a = parseInt+parseInt1+parseInt2+parseInt3+parseInt4;
                             Log.e("返回值", "onNext: " + a);
-
                         }
-
-
 
                         getParseInt = parseInt/a;
                         getParseInt1 = parseInt1/a;
