@@ -7,6 +7,8 @@
     android:id="@+id/fragmentactivity"
     tools:context=".login.PHoneOnActivity">
 
+
+
     <TextView
         android:visibility="gone"
         android:id="@+id/super_phone"
@@ -18,11 +20,23 @@
 
     <LinearLayout
         android:layout_marginBottom="100dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center">
 
+        <TextView
+            android:background="@drawable/textviewbk"
+            android:id="@+id/statistics"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="统计"
+            android:textSize="70sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
         <TextView
             android:id="@+id/textviewphone"
             android:background="@drawable/textviewbk"

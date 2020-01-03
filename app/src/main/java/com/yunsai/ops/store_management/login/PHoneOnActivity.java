@@ -21,9 +21,10 @@ public class PHoneOnActivity extends AppCompatActivity {
     private TextView mTextviewphoneto;
     String Keyss = "0";
     String keys = "1";
-    String keyst="2";
+    String keyst = "2";
     String key = null;
     private TextView mSuperPhone;
+    private TextView statistics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class PHoneOnActivity extends AppCompatActivity {
         mTextviewphone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (key.equals(keys)||key.equals(keyst)||key.equals(Keyss)) {
+                if (key.equals(keys) || key.equals(keyst) || key.equals(Keyss)) {
                     Intent intent = new Intent(PHoneOnActivity.this, FragmenttoActivity.class);
                     startActivity(intent);
                 } else {
@@ -51,7 +52,7 @@ public class PHoneOnActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (key.equals(keys)||key.equals(keyst)||key.equals(Keyss)) {
+                if (key.equals(keys) || key.equals(keyst) || key.equals(Keyss)) {
                     Intent intent = new Intent(PHoneOnActivity.this, FragmentActivity.class);
                     startActivity(intent);
                 } else {
@@ -60,18 +61,36 @@ public class PHoneOnActivity extends AppCompatActivity {
             }
         });
         mSuperPhone = findViewById(R.id.super_phone);
-        if (key.equals(Keyss)){
+        if (key.equals(Keyss)) {
             mSuperPhone.setVisibility(View.VISIBLE);
         }
         mSuperPhone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    Intent intent = new Intent(PHoneOnActivity.this, SuperPhoneActivity.class);
+                Intent intent = new Intent(PHoneOnActivity.this, SuperPhoneActivity.class);
+                startActivity(intent);
+            }
+        });
+        statistics = findViewById(R.id.statistics);
+
+        statistics.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                if (key.equals(keys) || key.equals(keyst) || key.equals(Keyss)) {
+                    Intent intent = new Intent(PHoneOnActivity.this, Statistical.class);
                     startActivity(intent);
+                } else {
+                    Toast.makeText(PHoneOnActivity.this, "暂无权限", Toast.LENGTH_SHORT).show();
                 }
+
+            }
         });
     }
+
     private long time;
+
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {

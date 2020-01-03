@@ -1,6 +1,7 @@
 package com.yunsai.ops.store_management.login;
 
 import com.yunsai.ops.store_management.base.BaseCod;
+import com.yunsai.ops.store_management.base.Cartogram;
 import com.yunsai.ops.store_management.base.PhoneBase;
 import com.yunsai.ops.store_management.base.PhoneCode;
 
@@ -23,4 +24,7 @@ public interface LoginAIP {
 
     @GET("PhoneInterpositionServer")
     Observable<BaseCod> InterpositionServer(@Query("userId") String Interposition,@Query("jurisdiction")String  add);
+
+    @GET("ShopIdS")
+    Observable<Cartogram> CARTOGRAM_OBSERVABLE();
 }

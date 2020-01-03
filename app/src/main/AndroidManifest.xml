@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login.SuperPhoneActivity"></activity>
+        <activity android:name=".login.Statistical"></activity>
+        <activity android:name=".login.SuperPhoneActivity" />
         <activity android:name=".home1.ParticularsToActivity" />
         <activity android:name=".home.FragmentActivity" />
         <activity android:name=".home1.FragmenttoActivity" />
