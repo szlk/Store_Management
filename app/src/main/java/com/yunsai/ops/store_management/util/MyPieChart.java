@@ -125,7 +125,7 @@ public class MyPieChart extends View {
                 float arcCenterX2 = 0; //这两个点作为短线的结束点
                 float arcCenterY2 = 0;
                 //百分百数字的格式
-                DecimalFormat numberFormat = new DecimalFormat("00.00");
+                DecimalFormat numberFormat = new DecimalFormat("0.00");
                 paint.setColor(Color.BLACK);
 
                 //分象限 利用三角函数 来求出每个短线的起始点和结束点，并画出短线和百分比。
